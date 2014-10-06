@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>AppleScript File</key>
+			<string>color.applescript</string>
+			<key>Image File</key>
+			<string>color.png</string>
+			<key>Title</key>
+			<string>Color Chooser</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Pickup, modify and insert a color into selected area</string>
+	<key>Extension Identifier</key>
+	<string>com.bygph.popclip.extension.color</string>
+	<key>Extension Image File</key>
+	<string>color.png</string>
+	<key>Extension Name</key>
+	<string>ColorChooser</string>
+	<key>Version</key>
+	<integer>2</integer>
+</dict>
+</plist>
