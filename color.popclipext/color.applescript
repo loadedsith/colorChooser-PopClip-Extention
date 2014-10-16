@@ -15,13 +15,20 @@ tell application "System Events"
 	set originalApplication to name of the first process whose frontmost is true
 end tell
 
+
+if (originalColor contains "popclip text") then
+	set initialState to "00ff00" #for initial state
+	set originalColor to initialState
+	#for debugging
+	#set test1 to "00ff00"
+	#set test2 to "#00ff00"
+	#set test3 to "fatcat"
+	#set test4 to "ZatcatFatcatZatcat"
+	#set originalColor to test1
+end if
+
 if debug then
-	if (originalColor contains "popclip text") then
-		set originalColor to "00ff00"
-	end if
-	if debug then
-		display alert "got color selected:" & originalColor buttons {"OK"}
-	end if
+	display alert "got color selected:" & originalColor buttons {"OK"}
 end if
 
 
