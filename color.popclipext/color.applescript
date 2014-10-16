@@ -22,8 +22,6 @@ if (originalColor contains "popclip text") then
 	#for debugging
 	#set test1 to "00ff00"
 	#set test2 to "#00ff00"
-	#set test3 to "fatcat"
-	#set test4 to "ZatcatFatcatZatcat"
 	#set originalColor to test1
 end if
 
@@ -33,9 +31,10 @@ end if
 
 
 try
-	if debug then
+	#delay 2
+	#if debug then
 		display alert "try:" buttons {"OK"}
-	end if
+	#end if
 	if (originalColor contains "#") then
 		set the originalColor to trim_line(originalColor, "#", 0)
 		set outputPrefix to outputPrefix & "#"
@@ -43,16 +42,16 @@ try
 	set the originalColor to cssHexColor_To_RGBColor(originalColor)
 	set the RGB16bit_list to (choose color default color originalColor)
 on error
-	if debug then
-		display alert "error:" buttons {"OK"}
-	end if
+	#if debug then
+	display alert "error:" buttons {"OK"}
+	#end if
 	set the RGB16bit_list to choose color
 end try
 
 set the results to RGB_to_HEX(RGB16bit_list)
 
 if debug then
-	display alert "got color hex:" & result buttons {"OK"}
+	#display alert "got color hex:" & result buttons {"OK"}
 end if
 
 tell application originalApplication
