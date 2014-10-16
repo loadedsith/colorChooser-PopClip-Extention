@@ -19,6 +19,8 @@
 	<string>com.bygph.popclip.extension.color</string>
 	<key>Extension Image File</key>
 	<string>color.png</string>
+	<key>Regular Expression</key>
+	<string>^#?([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?\z</string>
 	<key>Extension Name</key>
 	<string>ColorChooser</string>
 	<key>Version</key>
