@@ -33,7 +33,7 @@ end if
 try
 	#delay 2
 	#if debug then
-		display alert "try:" buttons {"OK"}
+	#display alert "try:" buttons {"OK"}
 	#end if
 	if (originalColor contains "#") then
 		set the originalColor to trim_line(originalColor, "#", 0)
